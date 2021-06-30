@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(149, 135, 235);
+}
+header div {
+  display: block;
+
+  text-align: center;
+}
+div h1 {
+  padding-top: 1rem;
+}
+
+nav {
+  background-color: rgb(50, 54, 58);
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav ul li {
+  padding: 0.5rem 0.75rem;
+}
+nav ul li a {
+  padding: 0.2rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: rgb(124, 211, 237);
+}
+main {
+  background: #a7cfd8; /* 背景色*/
+  padding: 30px; /* 內距，內部距離設為30px*/
+  font-size: 16px; /* 內文的字體大小設為16px*/
+  line-height: 2em; /* 行間設為2個字高*/
+  color: #464c4f; /* 文字顏色設定*/
+}
+main h2 {
+  text-align: center;
+}
+
+div {
+  width: 100%;
+  text-align: center;
+}
+div.table {
+  text-align: center;
+}
+footer {
+  background: #c1c2c2; /* 背景色*/
+  padding: 10px; /* 內距，內部距離設為10px*/
+  font-size: 14px; /* 內文的字體大小設為14px*/
+  color: #e4eef7; /* 文字顏色設定*/
+}
+footer p {
+  text-align: center;
+}

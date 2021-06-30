@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 95%;
+  border: 3px solid indigo;
+}
+
+#head-line {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(43, 42, 42);
+  display: flex;
+  justify-content: center;
+}
+
+li a.a {
+  display: block;
+  color: #ececec;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+li a:hover {
+  color: azure;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+}
+main div .a {
+  display: flex;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
