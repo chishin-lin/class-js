@@ -49,13 +49,12 @@ main h2 {
   text-align: center;
 }
 
-div {
+table {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  text-align: center;
 }
-div.table {
-  text-align: center;
-}
+
 footer {
   background: #c1c2c2; /* 背景色*/
   padding: 10px; /* 內距，內部距離設為10px*/
