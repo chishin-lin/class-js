@@ -52,7 +52,10 @@ main h2 {
 table {
   display: flex;
   justify-content: center;
-  width: 100%;
+}
+th,
+td {
+  width: 40vw;
 }
 
 footer {
