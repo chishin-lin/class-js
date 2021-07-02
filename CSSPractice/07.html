@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>平行排版樣式</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      .wrap {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(-30deg, rgb(160, 38, 61), pink, orange);
+      }
+      .container {
+        width: 1200px;
+        margin: auto;
+        display: flex;
+      }
+      .item {
+        width: 368px;
+        margin: 0px 15px;
+        display: flex;
+        background-color: white;
+        border: 1px solid blue;
+        box-shadow: 0 10px 20px rgba(73, 29, 29, 0.6);
+      }
+      .item .pic {
+        width: 50%;
+      }
+      .item .pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;  <!--圖等比例調整-->
+      }
+      .item .txt {
+        width: 50%;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column ;
+
+      }
+      .item .txt h2 {
+          margin-bottom: .5em;
+      }
+      .item .txt p {
+      }
+      .item .txt .btn {
+          line-height: 1.5em;
+          border: 1px solid rgb(107, 103, 103);
+          padding: 0 1em;
+          align-self: flex-end;
+          text-decoration: none;
+          border-radius: 200px;
+          margin-top: auto;
+          color: cornflowerblue;
+      }
+      .item .txt .btn:hover{
+          background-color: rgb(122, 165, 245);
+          color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="container">
+        <div class="item">
+          <div class="pic">
+            <img src="https://picsum.photos/400/400?redom=10" alt="" />
+          </div>
+          <div class="txt">
+            <h2>平行排版樣式</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              nesciunt laudantium harum et vel architecto quibusdam blanditiis,
+              itaque molestias hic!
+            </p>
+            <br />
+            <a href="#" class="btn">more</a>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="pic">
+            <img src="https://picsum.photos/400/400?redom=20" alt="" />
+          </div>
+          <div class="txt">
+            <h2>適用於商品列</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+              fuga eveniet at aliquid esse nesciunt perferendis impedit
+              reprehenderit non expedita?
+            </p>
+            <br />
+            <a href="#" class="btn">more</a>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="pic">
+            <img src="https://picsum.photos/400/400?redom=30" alt="" />
+          </div>
+          <div class="txt">
+            <h2>適用於展示頁</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Exercitationem perferendis ab suscipit repellat hic ratione, eius
+              corrupti distinctio quod atque?
+            </p>
+            <br />
+            <a href="#" class="btn">more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
