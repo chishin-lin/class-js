@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>頁尾版塊</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-family: "Noto Sans TC", sans-serif;
+      }
+      body {
+        background-color: black;
+      }
+      .main-footer {
+        padding: 150px 0 0;
+        background: linear-gradient(
+          -120deg,
+          rgb(98, 154, 228),
+          rgb(133, 227, 240)
+        );
+      }
+      .main-footer .container {
+        display: flex;
+        width: 1200px;
+        margin: auto;
+      }
+      .footerItem {
+        width: 0;
+        flex-grow: 1;
+        margin: 0 20px;
+      }
+      .footerItem h4 {
+        font-size: 24px;
+        color: rgb(225, 244, 252);
+        border-bottom: 1px dotted rgb(244, 248, 15);
+        margin-bottom: 0.5em;
+        padding-bottom: 0.5em;
+      }
+      .footerItem nav {
+        display: flex;
+        flex-direction: column;
+      }
+      .footerItem nav a {
+        color: white;
+        line-height: 1.5;
+        text-decoration: none;
+        padding: 5px 0;
+      }
+      .footerItem nav a:hover {
+        color: coral;
+      }
+      .copyright {
+        width: 100%;
+        text-align: center;
+        margin: 150px 0 0;
+        padding: 10px 0;
+        background-color: rgb(70, 70, 155);
+        color: white;
+      }
+      .footerSub {
+        display: flex;
+        flex-direction: column;
+      }
+      .footerSub form {
+        display: flex;
+        width: 100%;
+        margin: auto 0;
+      }
+      .footerSub input[type="text"],
+      .footerSub input[type="submit"] {
+        border: none;
+        padding: 5px 10px;
+      }
+      .footerSub input[type="text"] {
+        width: 0;
+        flex-grow: 1;
+      }
+      .footerSub input[type="submit"] {
+        color: rgb(68, 127, 216);
+        background-color: rgb(180, 231, 231);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-footer">
+      <div class="container">
+        <div class="footerItem">
+          <h4>關於產品</h4>
+          <nav>
+            <a href="#">公司目標</a>
+            <a href="#">公司理念</a>
+            <a href="#">企業文化</a>
+          </nav>
+        </div>
+
+        <div class="footerItem">
+          <h4>產品列表</h4>
+          <nav>
+            <a href="#">項鍊</a>
+            <a href="#">耳環</a>
+            <a href="#">首飾</a>
+            <a href="#">髮飾</a>
+          </nav>
+        </div>
+
+        <div class="footerItem">
+          <h4>服務項目</h4>
+          <nav>
+            <a href="#">飾品訂製</a>
+            <a href="#">飾品維修</a>
+            <a href="#">飾品換貨</a>
+            <a href="#">飾品退貨</a>
+          </nav>
+        </div>
+
+        <div class="footerItem footerSub">
+          <h4>訂閱電子報</h4>
+          <form>
+            <input type="text" name="" id="" />
+            <input type="submit" value="訂閱" />
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        006 CSS practice &copy; 2021.07.02 頁尾切版練習
+      </div>
+    </div>
+  </body>
+</html>
