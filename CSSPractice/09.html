@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      .mainHeader {
+        background: linear-gradient(
+          45deg,
+          rgb(21, 119, 21),
+          rgb(182, 209, 92),
+          rgb(11, 114, 11)
+        );
+      }
+      .mainHeader .container {
+        display: flex;
+        padding: 20px 0;
+        max-width: 1200px;
+        margin: auto;
+        align-items: center;
+      }
+      .mainHeader .logo {
+        width: 100px;
+      }
+      .mainHeader .logo img {
+        width: 100%;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+      .mainHeader nav {
+        margin: auto;
+      }
+      .mainHeader nav a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 1rem;
+        position: relative;
+      }
+
+      .mainHeader nav a:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        bottom: -5px;
+        border-bottom: 2px dotted yellow;
+        transition: 0.3s;
+      }
+      .mainHeader nav a:hover:after {
+        left: 0;
+        right: 0;
+      }
+
+      .mainHeader .search {
+        display: flex;
+      }
+      .mainHeader .search input,
+      .mainHeader .search button {
+        border: 2px solid rgb(226, 149, 5);
+        background-color: white;
+        padding: 5px 10px;
+      }
+      .mainHeader .search input:focus,
+      .mainHeader .search button:focus {
+        outline: none;
+      }
+      .mainHeader .search input {
+        border-radius: 200px 0px 0px 200px;
+      }
+      .mainHeader .search button {
+        border-radius: 0 200px 200px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="mainHeader">
+      <div class="container">
+        <a href="#" class="logo"><img src="logo.jpg" alt="logoPic" /></a>
+        <nav>
+          <a href="#">首頁</a>
+          <a href="#">商品列表</a>
+          <a href="#">購物車表</a>
+          <a href="#">登入</a>
+        </nav>
+        <form action="" class="search">
+          <input type="search" name="" id="" />
+          <button>Serch</button>
+        </form>
+      </div>
+    </header>
+  </body>
+</html>
