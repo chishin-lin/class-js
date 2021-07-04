@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      .banner {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(
+              120deg,
+              rgba(156, 108, 245, 0.9) 50%,
+              transparent 50%
+            )
+            center center/100% 100%,
+          url("flower.jpg") right center/auto 100%;
+      }
+      .container {
+        height: 100%; /*文字排版區需要*/
+        width: 1200px;
+        margin: auto;
+      }
+      .txt {
+        height: 100%; /*文字排版區需要*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; /*底線縮小*/
+      }
+      .txt h1 {
+        font-size: 50px;
+        border-bottom: 1px solid white; /*底線製作*/
+      }
+      .txt small {
+        display: block;
+        font-size: 30px;
+      }
+      .txt h2 {
+        font-size: 20px;
+      }
+      .txt p {
+        font-size: 17px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="txt">
+          <h1>
+            滿版畫面之斜線切割
+            <small>這個畫面怎麼切</small>
+          </h1>
+          <h2>圖文滿版區塊</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            voluptate ad obcaecati,<br />Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Praesentium, unde!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
