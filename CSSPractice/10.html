@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>導覽列｜第一版</title>
+    <title>導覽列｜第二版</title>
+
     <style>
       * {
         padding: 0;
@@ -13,21 +14,23 @@
       }
       .mainHeader {
         background: linear-gradient(
-          45deg,
-          rgb(21, 119, 21),
-          rgb(182, 209, 92),
-          rgb(11, 114, 11)
+          85deg,
+          rgb(238, 166, 72),
+          rgb(245, 200, 55),
+          rgb(250, 177, 6)
         );
       }
       .mainHeader .container {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 20px;
         max-width: 1200px;
         margin: auto;
-        align-items: center;
       }
       .mainHeader .logo {
         width: 100px;
+        margin: 0 0 20px 0;
       }
       .mainHeader .logo img {
         width: 100%;
@@ -49,38 +52,19 @@
       .mainHeader nav a:hover {
         transform: translateY(-10px);
       }
+
       .mainHeader nav a:after {
         content: "";
         position: absolute;
         left: 50%;
         right: 50%;
         bottom: -5px;
-        border-bottom: 2px dotted yellow;
+        border-bottom: 3px dotted rgb(103, 165, 4);
         transition: 0.3s;
       }
       .mainHeader nav a:hover:after {
         left: 0;
         right: 0;
-      }
-
-      .mainHeader .search {
-        display: flex;
-      }
-      .mainHeader .search input,
-      .mainHeader .search button {
-        border: 2px solid rgb(226, 149, 5);
-        background-color: white;
-        padding: 5px 10px;
-      }
-      .mainHeader .search input:focus,
-      .mainHeader .search button:focus {
-        outline: none;
-      }
-      .mainHeader .search input {
-        border-radius: 200px 0px 0px 200px;
-      }
-      .mainHeader .search button {
-        border-radius: 0 200px 200px 0;
       }
     </style>
   </head>
@@ -94,10 +78,6 @@
           <a href="#">購物車表</a>
           <a href="#">登入</a>
         </nav>
-        <form action="" class="search">
-          <input type="search" name="" id="" />
-          <button>Serch</button>
-        </form>
       </div>
     </header>
   </body>
