@@ -17,14 +17,14 @@
       }
       .item {
         width: 25%;
-        position: relative;
+        position: relative; /*定位*/
       }
       img {
         width: 100%;
         vertical-align: middle;
       }
       .item .txt {
-        position: absolute;
+        position: absolute; /*定位*/
         top: 0;
         right: 0;
         bottom: 0;
@@ -34,11 +34,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        opacity: 0;
+        opacity: 0; /*不顯示*/
         transition: 0.3s;
       }
       .item:hover .txt {
-        opacity: 1;
+        opacity: 1; /*顯示*/
       }
       .item h2 {
         font-size: 20px;
