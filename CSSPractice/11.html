@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <title>網頁麵包屑</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+
+        }
+        body{
+            background-color: rgb(212, 151, 228);
+        }
+        .wrap{
+            padding:10px 0 ;
+            background-color: rgb(122, 151, 240);
+            box-shadow: 0 5px 5px rgb(44, 44, 116,.5) ;
+
+        }
+        .bread{
+            width: 90%;
+            margin: auto;
+            display: flex;
+        }
+
+        .bread li{
+            padding: 0 20px;
+
+        }
+        .bread li+li{
+            padding-left:0 ;
+        }
+        .bread li+li:before{  /*li+li:before排除第一個*/
+            content: ">>";
+            color: white;
+            margin-right: 20px;  /*調整>的距離，因上方設定li為20px*/
+        }
+        .bread a{
+            text-decoration: none;
+            color: white;
+        }
+        .bread a:hover,.bread li:last-child a{ /*last-child最後一項就是當前頁面*/
+            color: rgb(240, 177, 105);
+        }
+
+    </style>
+  </head>
+  <body>
+      <div class="wrap">
+        <ol class="bread">
+            <li><a href="#">飾品</a></li>
+            <li><a href="#">色系</a></li>
+            <li><a href="#">耳環</a></li>
+            <li><a href="#">客製</a></li>
+            <li><a href="#">麵包屑</a></li>
+        </ol>  
+        
+          </div>
+      </div>
+  </body>
+</html>
