@@ -8,14 +8,14 @@
     <style>
       * {
         padding: 0;
-        margin: o;
+        margin: 0;
         list-style: none;
       }
       body {
         padding: 100px 0px;
-        background:linear-gradient(20deg,rgb(27, 27, 31),rgb(219, 219, 235))fixed center center / 100% 100%;
-        <!--fixed固定背景、center center圖的位置XY、100% 100%寬跟高 -->
-
+        background: linear-gradient(20deg, rgb(27, 27, 31), rgb(219, 219, 235))
+          fixed center center / 100% 100%;
+        /*固定背景、center center圖的位置XY、100% 100%寬跟高*/
       }
       .wrap {
         width: 1200px;
@@ -36,21 +36,29 @@
       }
       .item .txt {
         width: 55%;
-        color:white;
+        color: white;
         flex-shrink: 0;
         padding: 50px 30px;
         box-sizing: border-box;
         position: relative;
-        z-index: 1;    <!--疊層樣式前後-->
+        z-index: 1; /*疊層樣式前後*/
       }
       .item > :first-child {
         margin-right: -10%;
       }
 
-      .item:nth-child(1) .txt{background-color: rgb(149, 5, 5,0.6);}
-      .item:nth-child(2) .txt{background-color: rgb(197, 129, 3,.6);}
-      .item:nth-child(3) .txt{background-color: rgb(70, 102, 5,.6);}
-      .item:nth-child(4) .txt{background-color: rgb(11, 28, 87,.6);}
+      .item:nth-child(1) .txt {
+        background-color: rgb(149, 5, 5, 0.6);
+      }
+      .item:nth-child(2) .txt {
+        background-color: rgb(197, 129, 3, 0.6);
+      }
+      .item:nth-child(3) .txt {
+        background-color: rgb(70, 102, 5, 0.6);
+      }
+      .item:nth-child(4) .txt {
+        background-color: rgb(11, 28, 87, 0.6);
+      }
     </style>
   </head>
   <body>
