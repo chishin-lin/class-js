@@ -11,19 +11,92 @@
         margin: 0;
         list-style: none;
       }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        background-image: linear-gradient(
+          45deg,
+          rgb(221, 153, 164),
+          rgb(236, 180, 74)
+        );
+      }
+      .table {
+        width: 800px;
+        margin: auto;
+      }
+      .table table {
+        width: 100%;
+        border: 3px double rgb(89, 89, 90);
+        background-color: white; /*只有表格有顏色，caption區域沒有*/
+        border-radius: 10px;
+      }
+      .table thead {
+        background-color: gray;
+        color: white;
+      }
+
+      .table thead th:first-child {
+        /*最左上角那一個的左上為圓*/
+        border-radius: 7px 0px 0px 0;
+      }
+      .table thead th:last-child {
+        /*最右上角那一個的右上為圓*/
+        border-radius: 0px 7px 0px 0;
+      }
+      .table tbody tr:nth-child(even) {
+        /*even偶數*/
+        background-color: yellowgreen;
+      }
+
+      .table tbody tr:hover {
+        /*摸到換色*/
+        background-color: violet;
+      }
+      .table tfoot td:first-child {
+        /*最左下角那一個的左下為圓*/
+        border-radius: 0px 0px 0px 7px;
+      }
+      .table tfoot td:last-child {
+        /*最右下角那一個的右下為圓*/
+        border-radius: 0px 0px 7px 0;
+      }
+
+      .table th {
+        border: 1px solid red;
+        padding: 6px 10px;
+      }
+      .table td {
+        border: 1px solid blue;
+        padding: 6px 10px;
+      }
+      .table caption {
+        caption-side: bottom; /*置底*/
+        text-align: right;
+        padding: 10px 0;
+        color: white;
+      }
     </style>
   </head>
+
   <body>
     <div class="table">
       <table>
+        <caption>
+          CSS 範例一欄表：作品製作格式
+        </caption>
+        <!--表格、註解之抬頭-->
         <thead>
           <tr>
-            <th scope="col">表格欄位製作</th>
-            <th scope="col">表格欄位製作</th>
-            <th scope="col">表格欄位製作</th>
-            <th scope="col">表格欄位製作</th>
-            <th scope="col">表格欄位製作</th>
-            <th scope="col">表格欄位製作</th>
+            <th scope="col">基礎版面</th>
+            <th scope="col">破格式版面</th>
+            <th scope="col">滿版</th>
+            <th scope="col">選單</th>
+            <th scope="col">表單</th>
+            <th scope="col">表格</th>
           </tr>
         </thead>
 
@@ -36,9 +109,6 @@
             <td>敬請期待</td>
             <td>敬請期待</td>
           </tr>
-        </tbody>
-
-        <tfoot>
           <tr>
             <td>敬請期待</td>
             <td>敬請期待</td>
@@ -46,6 +116,45 @@
             <td>敬請期待</td>
             <td>敬請期待</td>
             <td>敬請期待</td>
+          </tr>
+          <tr>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+          </tr>
+          <tr>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+          </tr>
+          <tr>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+          </tr>
+          <tr>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td>備註</td>
+            <td colspan="5">以上資料為作品使用</td>
           </tr>
         </tfoot>
       </table>
