@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/taiwanfont/twicon.css" />
+
+    <title>破格式設計</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      .wrap {
+        width: 1200px;
+        display: flex;
+        margin: auto;
+        margin: 100px auto;
+        /*background-color: dimgray;*/
+        padding: 75px;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        background-image: linear-gradient(
+          90deg,
+          rgb(166, 166, 240),
+          rgb(104, 127, 202)
+        );
+      }
+      .item {
+        width: 370px;
+        margin: 0 15px;
+        text-align: center;
+        border: 10px solid rgb(117, 139, 179);
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 10px 20px 50px rgb(113, 92, 231);
+      }
+      .item h3 {
+        color: rgb(53, 85, 142);
+      }
+      .item p {
+        color: rgb(82, 84, 88);
+      }
+      .item .icon {
+        width: 150px;
+        height: 150px;
+        background-color: rgb(255, 255, 255);
+        margin: -75px auto 0;
+        font-size: 85px;
+        line-height: 150px;
+        border-radius: 50%;
+        color: rgb(117, 139, 179);
+        position: relative;
+      }
+      .item:hover .icon {
+        animation: ss 0.5s linear infinite alternate; /*infinit不斷,alternate來回*/
+      }
+
+      .item .icon:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-right: 10px solid rgb(117, 139, 179);
+        border-top: 10px solid rgb(117, 139, 179);
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        left: -10px;
+        right: -10px;
+        top: -10px;
+        border-radius: 50%;
+        transform: rotate(-45deg);
+      }
+      .item .txt {
+        padding: 20px 20px 2em;
+      }
+      @keyframes ss {
+        0% {
+          transform: rotate(-10deg);
+        }
+        100% {
+          transform: rotate(10deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="item">
+        <div class="icon"><i class="twicon-l-taiwan-rw"></i></div>
+        <div class="txt">
+          <h3>台灣鐵路</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis
+            voluptates, quas reiciendis quidem quibusdam accusamus?
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="icon">
+          <i class="twicon-l-taipei-mrt"></i>
+        </div>
+        <div class="txt">
+          <h3>台北捷運</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            unde possimus placeat ipsum sunt reprehenderit.
+          </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="icon"><i class="twicon-l-kaoxiong-mrt"></i></div>
+        <div class="txt">
+          <h3>高雄捷運</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+            velit quas voluptatum. Optio, atque quo!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
