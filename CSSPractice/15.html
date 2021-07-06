@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>側邊欄選單</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+html,body{
+    height: 100%;
+}
+body{
+    background-image: linear-gradient(45deg,rgb(144, 144, 238),rgb(113, 228, 212));
+}
+.sideMenu{
+    width: 300px;
+    height: 100%;
+    padding: 10px 0;
+    background-color: rgb(235, 181, 190);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 0 10px rgba(77, 131, 167, 0.6); /*X軸 Y軸*/
+}
+
+.sideMenu form button {
+    border: none;
+    background-color: transparent;
+}
+.sideMenu form button img{
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+
+}
+.sideMenu form input:focus,
+.sideMenu form button:focus{
+    outline: none;
+}
+.sideMenu form {
+    display: flex;
+    margin: 0 auto 10px;
+    border-radius: 100px;
+    border: 3px solid rgb(236, 236, 179,.6);
+}
+form input{
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    width: 230px;
+    color: white;
+}
+nav img{
+    width: 30px;
+}
+nav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+nav a + a::before{
+    content: "";
+    position: absolute;
+    border-top: 2px solid rgb(95, 86, 86,.6);
+    left: 10px;
+    right: 10px;
+    top: 0;
+}
+/*做文字縮排特效*/
+ nav a .fa {
+margin-right: -2em;
+transform: scale(0);
+}
+nav a:hover .fa {
+    margin-right: 0em;
+transform: scale(1);
+
+}
+    </style>
+  </head>
+  <body>
+    <div class="sideMenu">
+      <form>
+        <input type="search" placeholder="請輸入關鍵字" />
+        <button><img src="flower.png"></img></button>
+      </form>
+      <nav>
+        <a href="#">
+            <img src="icons8-diamond-64.png"></img>
+            首頁</a>
+        <a href="#">
+            <img src="icons8-diamond-64.png"></img>
+            項鍊</a>
+        <a href="#"><img src="icons8-diamond-64.png"></img>
+            耳環</a>
+        <a href="#"><img src="icons8-diamond-64.png"></img>
+            首飾</a>
+        <a href="#"><img src="icons8-diamond-64.png"></img>
+            會員</a
+        >
+      </nav>
+    </div>
+  </body>
+</html>
