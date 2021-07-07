@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      img.back {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+        z-index: -10;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div .pic {
+        width: 350px;
+
+        margin: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        font-size: 50px;
+        padding: 100px;
+        font-weight: 300;
+        text-shadow: lightslategrey;
+      }
+      h1:after {
+        content: "";
+        display: block;
+        top: 0;
+        width: 300px;
+        border-bottom: 2px solid white;
+      }
+
+      .center {
+        text-align: center;
+        padding: 10px;
+        color: white;
+        font-size: 30px;
+        font-weight: 300;
+        margin: 50px;
+      }
+      div {
+        width: 70%;
+        color: rgb(238, 222, 218);
+        border: 5px solid rgba(240, 178, 61, 0.6);
+        padding: 10px;
+        margin: 20px;
+        font-size: 30px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        height: 50px;
+        background-color: rgba(249, 249, 197, 0.8);
+      }
+      nav li {
+        text-align: center;
+      }
+      nav a {
+        text-decoration: none;
+        color: rgb(233, 168, 4);
+        font-size: 30px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>森林之旅</h1>
+    <nav>
+      <li>
+        <a href="#">AAA</a>
+      </li>
+      <li>
+        <a href="#">BBB</a>
+      </li>
+      <li>
+        <a href="#">AAA</a>
+      </li>
+      <li><a href="#">BBB</a></li>
+    </nav>
+    <p class="center">慢心期待森林之美</p>
+    <img class="back" src="flower.jpg" alt="" />
+    <div>
+      <img class="pic" src="perfume.jpg" alt="" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+        itaque minus deleniti, laudantium asperiores qui ipsa, officiis eligendi
+        voluptatum accusantium expedita ipsam atque earum voluptas, saepe
+        doloribus commodi rem totam.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>普通網頁首頁排版練習</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        box-sizing: border-box;
+      }
+
+      header {
+        margin: 10px;
+        height: 100px;
+
+        background-color: cornflowerblue;
+      }
+      #A {
+        text-align: center;
+        padding: 20px;
+        color: white;
+        position: relative;
+        text-shadow: 10px 10px 4px rgb(224, 229, 233);
+        z-index: 2;
+      }
+      #B {
+        position: absolute;
+        top: 20px;
+        left: 40vw;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        color: rgb(30, 46, 73);
+        filter: blur(1px);
+      }
+      main {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      main nav {
+        margin: 10px;
+        width: 20vw;
+      }
+      main nav div {
+        margin: 5px;
+        background-color: yellowgreen;
+        padding: 20px;
+      }
+      main nav a {
+        text-decoration: none;
+        color: white;
+      }
+      legend {
+        width: 30vw;
+      }
+      fieldset {
+        border-radius: 20px;
+      }
+      .main .maintop {
+        margin: 20px;
+      }
+      main .main h2 {
+        color: lightslategrey;
+        font-weight: 600;
+        font-size: 30px;
+      }
+      main .main p {
+        line-height: 1.5em;
+        padding: 20px;
+      }
+      main .main ul {
+        margin: 0 30px;
+      }
+      main .main ul li {
+        list-style-type: square;
+      }
+      .main .mainbotton {
+        width: 100%;
+      }
+      .main .mainbotton img {
+        border-radius: 10px;
+      }
+      main .right {
+        margin: 20px auto;
+        padding: 10px;
+        width: 25vw;
+        background-color: lightslategrey;
+        height: 70vh;
+      }
+      footer {
+        width: 100%;
+        height: 10vh;
+        background-image: linear-gradient(45deg, gray, white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+      @media screen and (max-width: 1182px) {
+        .main,
+        .maintop,
+        img,
+        main.right {
+          width: 90%;
+          margin: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="A">可愛狗狗</h1>
+      <h1 id="B">可愛狗狗</h1>
+    </header>
+
+    <main>
+      <nav>
+        <div class="link"><a href="#">最新消息</a></div>
+        <div class="link"><a href="#">影片欣賞</a></div>
+        <div class="link"><a href="#">音樂欣賞</a></div>
+        <div class="link"><a href="#">聯絡我們</a></div>
+      </nav>
+
+      <div class="main">
+        <div class="maintop">
+          <fieldset>
+            <legend>最新消息</legend>
+            <p>
+              寵物認養起跑囉！！<br />
+              即日起至12月30日。
+            </p>
+            <p>認養條件：</p>
+            <ul>
+              <li>有愛心</li>
+              <li>有耐心</li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="mainbotton">
+          <img src="https://picsum.photos/200/150?redom=10" alt="" />
+          <img src="https://picsum.photos/200/150?redom=20" alt="" />
+          <img src="https://picsum.photos/200/150?redom=30" alt="" />
+        </div>
+      </div>
+
+      <div class="right">
+        <h2>關於我們</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+          dignissimos ab blanditiis nostrum amet eligendi! Est deleniti enim
+          sapiente nostrum?
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>2021.07,7 練習</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      .main {
+        background-color: tomato;
+        padding: 20px;
+        float: left;
+        width: 60%;
+      }
+      .right {
+        background-color: rgb(16, 147, 223);
+        padding: 20px;
+        float: left;
+        width: 20%;
+      }
+      @media screen and (max-width: 800px) {
+        .left,
+        .main,
+        .right {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Media Queries</h2>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima modi
+      magni pariatur tempora optio alias. Dolorum doloremque nam laboriosam qui.
+    </p>
+    <div class="left">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, amet!
+      </p>
+    </div>
+
+    <div class="main">
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="right">
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </body>
+</html>

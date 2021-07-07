@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      h1 {
+        text-align: center;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      nav {
+        width: 80vw;
+        background-color: rgb(153, 205, 50, 0.8);
+        text-align: center;
+        margin: auto;
+        padding: auto;
+        position: sticky;
+        top: 10px;
+      }
+
+      nav ul {
+        /*display: inline-block;*/
+        display: flex;
+        justify-content: space-around;
+      }
+      ul li {
+        list-style-type: none;
+        padding: 0 30px;
+        font-size: 30px;
+      }
+      ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      table {
+        border-collapse: separate;
+        width: 80%;
+        margin: auto;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1.5px solid gray;
+      }
+
+      .parent {
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        width: 250px;
+        height: 250px;
+        background-color: rgb(255, 0, 0, 0.7);
+        z-index: -1;
+      }
+      .child {
+        position: absolute;
+        top: 20px;
+        left: 60px;
+        width: 250px;
+        height: 250px;
+        background-color: royalblue;
+        z-index: -2;
+      }
+
+      div.static {
+        position: static;
+        border: 5px dashed rgb(169, 228, 157);
+        width: 500px;
+        height: 300px;
+        top: 100px;
+        left: 100px;
+        margin: auto;
+      }
+      .relative {
+        width: 500px;
+        height: 300px;
+        border: 3px solid rgb(28, 157, 212);
+        margin: auto;
+      }
+      .absolute {
+        text-align: center;
+        width: 400px;
+        height: 300px;
+        border: 3px solid tomato;
+        margin: 10px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>水平導覽列</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">AAA</a></li>
+        <li><a href="#">BBB</a></li>
+        <li><a href="#">CCC</a></li>
+      </ul>
+    </nav>
+
+    <table>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Lee</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>Andy</td>
+        <td>Lin</td>
+        <td>$120</td>
+      </tr>
+      <tr>
+        <td>Lexi</td>
+        <td>wang</td>
+        <td>$110</td>
+      </tr>
+      <tr>
+        <td>Joe</td>
+        <td>Gee</td>
+        <td>$100</td>
+      </tr>
+    </table>
+
+    <div class="parent"></div>
+    <div class="child"></div>
+
+    <div class="static">this is an element about static</div>
+    <div class="absolute">this is an element about absolute外</div>
+    <div class="relative">
+      this is an element about relative
+      <div class="absolute">this is an element about absolute內</div>
+    </div>
+  </body>
+</html>
