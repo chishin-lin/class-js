@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>打怪獸遊戲</title>
+  </head>
+  <body>
+    <h2>JavaScript Function-打怪獸遊戲</h2>
+    <script>
+      window.onload = function () {
+        let ans = prompt("是否要進入遊戲？（Yes/No）");
+        if (ans === "Yes") {
+          alert("進入遊戲");
+          playGame();
+        } else if (ans === "No") {
+          return;
+        } else {
+          alert("請輸入 Yes 或 No ");
+        }
+      };
+
+      function playGame() {
+        let enemy = 100;
+        let attack;
+        let cnt = 0;
+        while (enemy > 0) {
+          attack = Math.floor(Math.random() * 31);
+          document.write("怪獸受到" + attack + "點的傷害" + "<br>");
+          enemy = enemy - attack;
+          cnt++;
+        }
+        document.write("在第" + cnt + "回合打倒怪獸!");
+      }
+    </script>
+  </body>
+</html>
